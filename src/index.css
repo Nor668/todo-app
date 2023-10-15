@@ -5,51 +5,64 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 5rem;
 }
 
 .logo {
-  font-size: 70px;
+  font-size: 7rem;
   font-family: Arial, Helvetica, sans-serif;
   color: burlywood;
 }
 
+form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .input {
-  width: 505px;
+  max-width: 50.5rem;
+  width: 100%;
   height: 2rem;
-  padding: 10px 25px;
-  margin: 32px 0 10px 0;
+  padding: 1rem 2.5rem;
+  margin: 3.2rem 0 1rem 0;
   box-shadow: 0px 0px 8px 1px rgba(34, 60, 80, 0.2);
   border: none;
-  border-radius: 20px;
+  border-radius: 2rem;
 
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .main {
-  width: 550px;
+  max-width: 50.5rem;
+  width: 100%;
   /* background-color: antiquewhite; */
 }
 
 ul {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .list-item {
-  padding: 5px 15px 5px 15px;
-  height: 58px;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  height: 5.8rem;
   display: flex;
   align-items: center;
 
   box-shadow: 0px 0px 8px 1px rgba(34, 60, 80, 0.2);
-  border-radius: 20px;
+  border-radius: 2rem;
 }
 
 .list-item:hover span {
@@ -58,8 +71,8 @@ ul {
 
 .checkbox {
   display: inline-block;
-  width: 50px;
-  height: 20px;
+  width: 5rem;
+  height: 2rem;
   accent-color: brown;
   cursor: pointer;
 }
@@ -79,43 +92,47 @@ ul {
 
 .list-item span {
   opacity: 0;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: grey;
-  width: 50px;
+  width: 5rem;
   cursor: pointer;
   transition: all 0.3s;
 }
 .list-item span:hover {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: brown;
-  width: 50px;
+  width: 5rem;
   cursor: pointer;
 }
 
 .sorted-box {
-  width: 505px;
-  padding: 10px 25px;
-  margin-bottom: 32px;
+  max-width: 50.5rem;
+  width: 100%;
+  padding: 1rem 2.5rem;
+  margin-bottom: 3.2rem;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  row-gap: 2rem;
 }
 
 em {
   font-style: normal;
   color: grey;
-  width: 80px;
+  width: 8rem;
+  font-size: 1.4rem;
 }
 
 .btn {
   background-color: blanchedalmond;
   color: black;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 700;
-  padding: 5px 15px;
+  padding: 0.5rem 1.5rem;
   border: none;
-  border-radius: 10px;
+  border-radius: 1rem;
   transition: all 0.2s;
 }
 
@@ -126,7 +143,27 @@ em {
   background-color: rgb(252, 219, 170);
 }
 
+.btns-wrap {
+  display: flex;
+  gap: 2rem;
+}
+
 .btn-box {
   display: flex;
-  gap: 15px;
+  gap: 1rem;
+}
+
+@media (max-width: 620px) {
+  .sorted-box {
+    margin-bottom: 2.2rem;
+    justify-content: center;
+  }
+
+  .btn {
+    font-size: 1.1rem;
+  }
+
+  .btns-wrap {
+    gap: 1rem;
+  }
 }
