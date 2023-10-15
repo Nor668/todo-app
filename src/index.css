@@ -1,13 +1,132 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.logo {
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: burlywood;
+}
+
+.input {
+  width: 505px;
+  height: 2rem;
+  padding: 10px 25px;
+  margin: 32px 0 10px 0;
+  box-shadow: 0px 0px 8px 1px rgba(34, 60, 80, 0.2);
+  border: none;
+  border-radius: 20px;
+
+  font-size: 16px;
+}
+
+.main {
+  width: 550px;
+  /* background-color: antiquewhite; */
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-item {
+  padding: 5px 15px 5px 15px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+
+  box-shadow: 0px 0px 8px 1px rgba(34, 60, 80, 0.2);
+  border-radius: 20px;
+}
+
+.list-item:hover span {
+  opacity: 1;
+}
+
+.checkbox {
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  accent-color: brown;
+  cursor: pointer;
+}
+
+.text {
+  font-size: 1.6rem;
+  color: grey;
+  width: 100%;
+}
+
+.done {
+  font-size: 1.6rem;
+  color: rgb(188, 188, 188);
+  width: 100%;
+  text-decoration: line-through;
+}
+
+.list-item span {
+  opacity: 0;
+  font-size: 1.6rem;
+  color: grey;
+  width: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.list-item span:hover {
+  font-size: 1.6rem;
+  color: brown;
+  width: 50px;
+  cursor: pointer;
+}
+
+.sorted-box {
+  width: 505px;
+  padding: 10px 25px;
+  margin-bottom: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+em {
+  font-style: normal;
+  color: grey;
+  width: 80px;
+}
+
+.btn {
+  background-color: blanchedalmond;
+  color: black;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: rgb(252, 219, 170);
+}
+.active {
+  background-color: rgb(252, 219, 170);
+}
+
+.btn-box {
+  display: flex;
+  gap: 15px;
 }
